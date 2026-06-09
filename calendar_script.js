@@ -108,7 +108,6 @@
   $('#prevM').addEventListener('click', prevMonth); $('#nextM').addEventListener('click', nextMonth);
   $('#newEvent').addEventListener('click', newEvent); $('#closeEvent').addEventListener('click', ()=> $('#eventModal').classList.add('hidden'));
   $('#saveEvent').addEventListener('click', saveEvent);
-  $('#toggleTheme').addEventListener('click', ()=>{ document.body.classList.toggle('dark'); });
   $('#eventModal').addEventListener('click', (e)=>{ if(e.target.id==='eventModal') $('#eventModal').classList.add('hidden'); });
 
   function render(){ renderMonth(curDate); renderTodaySummary(); renderCountdown(); renderMemories(); renderStats(); }
